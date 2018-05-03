@@ -187,17 +187,29 @@
 <body>
   <img id="cat" alt="brownTabbySleeps" title="sleeping beauty kitty" src="kittySleep.jpg" />
   <!-- number of clicked will go inside of #click_count -->
-  <p>You Clicked: <strong id="click_count"></strong></p>
+  <p>Kitty Sleep Clicked: <strong id="click_count"></strong></p>
   <p><cite>Kitty Sleeps</cite> photo by Paul Hanaoka on Unsplash.</p>
+  
+  <img id="cat1" alt="blackGreyCat" title="cat looking up at you" src="CatStareChallenge.jpg" />
+  <p>Kitty Stare Clicked: <strong id="click_count1"></strong></p>
+  <p><cite>Kitty Stare</cite> photo by Erik-Jan Leusink on Unsplash.</p>
+  
   <!-- I load my logcial script later; so it doesn't interfere with UI of seeing the cute cat photo! -->
   <script type="text/javascript">
   // Some cat clicking counter will go here
   var catImg = document.getElementById("cat");
+  var catImg1 = document.getElementById("cat1")
   var clickCount = document.getElementById("click_count");
+  var clickCount1 = document.getElementById("click_count1");
   var count = 0;
+  var count1 = 0;
 
   function setCount(count) {
     clickCount.innerText = count;
+  }
+
+  function setCount1(count) {
+    clickCount1.innerText = count;
   }
 
   catImg.addEventListener('click', function() {
@@ -205,6 +217,13 @@
     mwah();
     // precount to display count starts 1
     setCount(++count);
+  }, false);
+
+  catImg1.addEventListener('click', function() {
+    // heartBubble displays when mwah() is called
+    mwah();
+    // precount to display count starts 1
+    setCount1(++count1);
   }, false);
 
   </script>
