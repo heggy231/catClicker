@@ -17,3 +17,8 @@ for version
   img, embed, object, video {
     max-width: 100%; // relative size catchall!
   }
+
+3) Added heart bubbles
+http://www.mf2fm.com/rv/dhtmlheartcursor.php
+- commented out then mwah() was called
+- added it inside of click event listener
