@@ -1,0 +1,9 @@
+#cat {
+  width: 640px;/* reponsive base size */
+  max-width: 100%; /* override when needed to stay inside container */
+}
+
+/* Recommended going foward, add catch all in main CSS for img, embed, object, video just to be safe */
+img, embed, object, video {
+  max-width: 100%; /* relative size catchall! */
+}
