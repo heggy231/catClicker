@@ -31,8 +31,17 @@ http://www.mf2fm.com/rv/dhtmlheartcursor.php
   - https://github.com/qqyoungqq/cat-clicker/tree/32a53ba3a4385b8c33051b5e73aeab6f55398313
 
 4) constructor function: 
-- name of the function is Capitalized. ex) Cat
-- 
+- Capitalizing constructor's name. 
+  * ex) function Cat () { // do something }
+- Things happen automatically such as, 
+this is set to empty obj, this is reuturn
+  * function Cat () {
+    // this is set to empty obj, {}
+    // this is returned
+  }
+
+  // create testCat based Cat Constructor function
+  var testCat = new Cat();
 ```javascript
 // first set up constructor function 
 var Cat = function (name, img_Url, default_click_count) {
@@ -42,3 +51,6 @@ var Cat = function (name, img_Url, default_click_count) {
 };
 
 // 
+
+- simple: https://github.com/rogyw/ufend-cat-clicker/tree/c4893100d6ce1c30b36bc1bef08568bccc45dce3
+
