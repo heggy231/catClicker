@@ -4,7 +4,11 @@
 * https://github.com/gauravsinghaec/Cat-Clicker
   - 
 
-for version 
+* https://github.com/qqyoungqq/cat-clicker/commits/master
+
+* https://github.com/KelseySteele/Cat-Clicker
+
+for version Version 1
 1) I set up html pg
   - Due to so little function in app.js
   - I will combine JavaScript script inside of index.html
@@ -22,3 +26,19 @@ for version
 http://www.mf2fm.com/rv/dhtmlheartcursor.php
 - commented out then mwah() was called
 - added it inside of click event listener
+
+* Research Version 2
+  - https://github.com/qqyoungqq/cat-clicker/tree/32a53ba3a4385b8c33051b5e73aeab6f55398313
+
+4) constructor function: 
+- name of the function is Capitalized. ex) Cat
+- 
+```javascript
+// first set up constructor function 
+var Cat = function (name, img_Url, default_click_count) {
+  this.name = name;
+  this.image = img_url;
+  this.clickCount = default_click_count;
+};
+
+// 
