@@ -1,1 +1,0 @@
-var catImg = document.getElementById("cat");
